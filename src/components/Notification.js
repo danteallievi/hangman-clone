@@ -1,6 +1,6 @@
-const Notification = () => {
+const Notification = ({ showNotification }) => {
   return (
-    <div class='notification-container' id='notification-container'>
+    <div className={`notification-container ${showNotification ? 'show' : ''}`}>
       <p>You have already entered this letter</p>
     </div>
   );
